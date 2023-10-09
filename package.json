@@ -1,0 +1,28 @@
+{
+  "name": "mdm-calculator",
+  "version": "1.0.0",
+  "description": "MDMCalculator app is designed for calculating and generating reports related to the Mid Day Meal program in Indian Government Schools.",
+  "main": "src/index.js",
+  "scripts": {
+    "start":"nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GTM-Software/mdm-calculator.git"
+  },
+  "keywords": [
+    "tools",
+    "javascricpt",
+    "node"
+  ],
+  "author": "Annkur Gupta (https://www.linkedin.com/in/ankurgupta001/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GTM-Software/mdm-calculator/issues"
+  },
+  "homepage": "https://github.com/GTM-Software/mdm-calculator#readme",
+  "devDependencies": {
+    "nodemo": "^1.0.0"
+  }
+}
