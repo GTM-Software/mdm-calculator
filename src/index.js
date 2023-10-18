@@ -1,5 +1,6 @@
 "use strict"
 const welcome = require("./calculator/calculator");
+const LOG = require("./logger/Logger");
 const http = require("http");
 const fs = require("fs");
 
@@ -8,25 +9,10 @@ const user = {
     "lastName" : "Singh",
     "mobile" : "1234567890",
 };
-console.log(welcome);
-
-welcome.greet("Ankur");
-
-welcome.greet2("Master Ji");
-
-
 
 const mySrver = http.createServer((req, res) => {
-        const log = `${new Date()} :${req.url}: request received\n`;
-        fs.appendFile("logs/log.log", log, (err, data) => {
-            res.end(`<h1>Hello ${user.fistName}  From Server</h1>`);
-
-            if(err) {
-                throw console.error(err);
-            }
-        });
-
-        
+        const log = `${req.url}:request received`;
+        LOG.INFO(log);
         // Show Different Content to Diffent URls
         switch(req.url){
             case "/":
@@ -40,9 +26,7 @@ const mySrver = http.createServer((req, res) => {
         }
      
     });
-
-    // const sendResponseText
-
+    
     mySrver.listen(3000, () => {
         console.log("Server is lisening at 3000 port")
     });
