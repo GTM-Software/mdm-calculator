@@ -1,7 +1,6 @@
 "use strict"
 
-const greet = (user) => console.log(`Welcome ${user} MDMCalcualtor Started`);
-const greet2 = (user) => console.log(`Welcome ${user} MDMCalcualtor Started`);
+const greet = (user) => `<h1>Hello ${user.firstName}  Welcome to Mid Day Meal Calculator !!!</h1>`;
 
-module.exports = {greet, greet2};
+module.exports = {greet};
 
