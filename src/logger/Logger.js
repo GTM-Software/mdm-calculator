@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 
 /**
  * The `logger` is simple module enables to logging based on 
@@ -30,9 +30,8 @@ const LOGLEVEL = {
 };
 
 const properties = {
-
     "logFileName" : "log",
-    "dateFormatString" : "DD-MM-YYYY",
+    "dateFormatString" : "",
     "formatedDate" : new Date(),
 };
 
