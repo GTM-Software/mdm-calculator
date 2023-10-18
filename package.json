@@ -4,7 +4,7 @@
   "description": "MDMCalculator app is designed for calculating and generating reports related to the Mid Day Meal program in Indian Government Schools.",
   "main": "src/index.js",
   "scripts": {
-    "start":"nodemon src/index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/GTM-Software/mdm-calculator#readme",
   "devDependencies": {
-    "nodemo": "^1.0.0"
+    "nodemon": "^3.0.1"
   }
 }

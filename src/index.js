@@ -18,7 +18,7 @@ welcome.greet2("Master Ji");
 
 const mySrver = http.createServer((req, res) => {
         const log = `${new Date()} :${req.url}: request received\n`;
-        fs.appendFile("./log.txt", log, (err, data) => {
+        fs.appendFile("logs/log.log", log, (err, data) => {
             res.end(`<h1>Hello ${user.fistName}  From Server</h1>`);
 
             if(err) {
@@ -30,7 +30,7 @@ const mySrver = http.createServer((req, res) => {
         // Show Different Content to Diffent URls
         switch(req.url){
             case "/":
-            res.end(`<h1>Hello ${user.fistName}  Welcome to Mid Day Meal Calculator</h1>`);
+            res.end(`<h1>Hello ${user.fistName}  Welcome to Mid Day Meal Calculator !!!</h1>`);
             break;
             case "/profile":
             res.end(`<h1>Profile Page of  ${user.fistName} | Contact  ${user.mobile} ]</h1> `);
