@@ -4,7 +4,7 @@ const LOG = require("./logger/Logger");
 const http = require("http");
 const fs = require("fs");
 
-const dte = require("./simpledate");
+const dte = require("./simpledate/SimpleDate");
 
 const user = {
     "fistName" : "Mohit",
